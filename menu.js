@@ -32,6 +32,17 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'Buffalo Chicken',
+    price: 26,
+    category: 'Chicken',
+    popularity: 7,
+    ratting: 9,
+    tags: ['Chicken', 'Buffalo']
+}
+
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +55,8 @@
 
 //CODE HERE
 
+//console.log(pizza.popularity)
+
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +66,8 @@
 */
 
 //CODE HERE
+
+//console.log(pizza.tags[1])
 
 
 /*
@@ -64,6 +79,9 @@
 
 //CODE HERE
 
+let {price} = pizza
+//console.log(price)
+
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +91,10 @@
 */
 
 //CODE HERE
+
+let {category} = pizza
+
+//console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -89,6 +111,49 @@
 
 //CODE HERE
 
+let foodArr = [
+    {
+        name: 'Buffalo Chicken',
+        price: 26,
+        category: 'Chicken',
+        popularity: 7,
+        ratting: 9,
+        tags: ['Chicken', 'Buffalo'] 
+    },
+    {
+        name: 'Hot Dog',
+        price: 5,
+        category: 'Park',
+        popularity: 5,
+        ratting: 6,
+        tags: ['Yum', 'Quick']
+    },
+    {
+        name: 'Sandwich',
+        price: 8,
+        category: 'Lunch',
+        popularity: 4,
+        ratting: 4,
+        tags: ['Yum', 'Good Eats']
+    },
+    {
+        name: 'Corn Dog',
+        price: 4,
+        category: 'Park',
+        popularity: 9,
+        ratting: 9,
+        tags: ['Yum', 'Greese']
+    },
+    {
+        name: 'Fruit Platter',
+        price: 12,
+        category: 'Snack',
+        popularity: 1,
+        ratting: 1,
+        tags: ['Healthy', 'Yum']
+    },
+]
+
 
 
 //////////////////PROBLEM 4////////////////////
@@ -104,6 +169,10 @@
 */
 
 //CODE HERE
+
+function filteredFood (element, callback) {
+    if ()
+}
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
