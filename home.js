@@ -134,9 +134,11 @@ const deals = [
 
 //CODE HERE
 
-let {title[0]} = deals
+let deal1 = deals[0].title.replace('15% Off!', '10% Off!')
 
-console.log(title)
+console.log(deal1)
+
+
 
 
 
@@ -158,3 +160,7 @@ console.log(title)
 */
 
 //CODE HERE
+
+let desc2 = deals[1].desc.replace('This deal lasts until the end of March!', 'This deal lasts until the end of April.') + deals[1].desc.trim()
+
+console.log (desc2)
