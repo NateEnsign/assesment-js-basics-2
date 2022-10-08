@@ -37,7 +37,12 @@ const cart = [
 
 
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((pValue, cValue) => {
+    return pValue + cValue.price
+},0)
+
+//console.log(summedPrice)
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -56,6 +61,12 @@ const cart = [
 */
 
 //CODE HERE
+
+function calcFinalPrice (cartTotal, couponValue, tax) {
+    return cartTotal + cartTotal * tax - couponValue
+}
+
+console.log(calcFinalPrice(12, 2, 0.05))
 
 
 
@@ -82,6 +93,12 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+    name: 'string' know who the order is for
+    address: 'string' know where to deliver the order
+    phone: 'string' call if any issues with order
+    timeOfOrder: 'string' tracking purposes
+
+
 */
 
 /*
@@ -90,3 +107,10 @@ const cart = [
 */
 
 //CODE HERE
+
+let customer = {
+    name: 'Shelby',
+    address: '6046 w. 10150 n. Highland, Ut 84003',
+    phone: '801-763-1446',
+    timeOfOrder: '8:03 PM',
+}
