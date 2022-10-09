@@ -170,12 +170,10 @@ let foodArr = [
 
 //CODE HERE
 
-function filteredFood (element, callback) {
-    if ()
-}
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((foodObj) => foodObj.tags.includes('Yum'))
 
+//console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -219,6 +217,17 @@ function filteredFood (element, callback) {
 
 //CODE HERE
 
+function filterByProperty(property, number, type) {
+    let filteredArray = foodArr.filter((foodObj) => {
+        if (type === 'above') {
+            return foodObj[property] > number
+        } else if (type === 'below') {
+            return foodObj[property] < number
+        }
+    })
+    return filteredArray
+}
+
 
 /*
     Invoke the `filterByProperty` function passing
@@ -228,3 +237,5 @@ function filteredFood (element, callback) {
 */
 
 //CODE HERE
+
+console.log(filterByProperty('popularity', 6, 'above'))
