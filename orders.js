@@ -31,16 +31,16 @@
 
 //CODE HERE
 
-class Ticket {
-    constructor(items, orderTime, customerId, status){
-        this.items = items;
-        this.orderTime = orderTime;
-        this.customerId = customerId;
+class Ticket{
+    constructor(items, orderTime, customerId) {
+        this.items = items
+        this.orderTime = orderTime
+        this.customerId = customerId
         this.status = 'queued'
     }
-    updatedStatus (newStatus){
+    updateStatus(newStatus) {
         this.status = newStatus
-    console.log(`The order for customer ${this.CustomerId} is now ${newStatus}`)
+        console.log(`The order for customer ${this.customerId} is now ${this.status}.`)
     }
 }
 
@@ -59,7 +59,7 @@ class Ticket {
 
 //CODE HERE
 
-let ticket1 = new Ticket(['pizza', 'bread', 'soda'], '7:03 PM', '575')
+let firstTicket = new Ticket('pizza and bread', '7:03 PM', 575)
 
 
 /*
@@ -70,4 +70,4 @@ let ticket1 = new Ticket(['pizza', 'bread', 'soda'], '7:03 PM', '575')
 
 //CODE HERE
 
-updatedStatus(ticket1('cooking'))
+firstTicket.updateStatus('cooking')
