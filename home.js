@@ -67,7 +67,7 @@ function canWeDeliver (zipCode) {
     }
 }
 
-    //console.log(canWeDeliver(85207))
+    //console.log(canWeDeliver(85205))
 
 /* 
     Problem 2 Continued
@@ -96,7 +96,7 @@ function canWeDeliverTwo (zipCode) {
     }
 }
 
-console.log(canWeDeliver(85205))
+//console.log(canWeDeliver(85207))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -136,7 +136,7 @@ const deals = [
 
 let deal1 = deals[0].title.replace('15% Off!', '10% Off!')
 
-console.log(deal1)
+//console.log(deal1)
 
 
 
@@ -161,6 +161,6 @@ console.log(deal1)
 
 //CODE HERE
 
-let desc2 = deals[1].desc.replace('This deal lasts until the end of March!', 'This deal lasts until the end of April.') + deals[1].desc.trim()
+let desc2 = deals[1].desc.trim().replace('This deal lasts until the end of March!', 'This deal lasts until the end of April.')
 
 console.log (desc2)
